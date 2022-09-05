@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background: url(232153.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.connects{
+    width: 50%;
+    height: 490px;
+    background: rgba(255, 255, 255, 0.575);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.connects form{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.connects form input{
+   padding: 10px;
+   width: 80%;
+   border: none;
+   border-bottom: 2px solid rgba(63, 62, 61, 0.945);
+   outline: none;
+   z-index: 1;
+   background: none;
+}
+.connects form input:focus ~ span{
+    transform: translateY(-23px);
+    color: rgb(255, 141, 35);
+    font-size: 19px;
+ }
+.connects form span{
+    position: absolute;
+    left: 60px;
+    transition: .4s ease;
+    color: rgba(255, 145, 43, 0);
+    
+}
+.conect{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 115px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(130deg, rgb(255, 176, 72), rgb(255, 173, 106), rgb(238, 123, 30));
+    border-radius: 4px;
+}
+.conect:hover{
+    background: linear-gradient(360deg, rgb(255, 176, 72), rgb(255, 173, 106), rgb(238, 123, 30));
+}
+@media (max-width: 420px) {
+    .connects{
+        width: 95%;
+    }
+    .connects form{
+        width: 95%;
+    }
+    .connects form input{
+       width: 90%;
+    }
+    .connects form span{
+        left: 20px;
+    }
+}
+.close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+     top: 15px;
+    background: white;
+    border-radius: 50%;
+    fill: rgb(250, 158, 21);
+    transition: .3s ease-in-out;
+}
